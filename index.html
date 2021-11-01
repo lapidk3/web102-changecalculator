@@ -2,12 +2,60 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <title>Change Calculator</title>
   </head>
   <body>
-    <!-- Write your markup here -->
-
-    <!-- Don't forget to add your <script> tag here -->
-
+    <h1 style="font-size: 50px;">Welcome to the Change Calculator!</h1>
+    <div class="input-pane">
+      <label for="amount">Enter the sale amount</label>
+      <input id="amount-due" type="text" name="amount-due"/>
+      <label for="amount-received">Enter the amount of tender given</label>
+      <input id="amount-received" type="text" name="amount-received"/>
+      <button id="calculate-change" onclick="calculateChange()">Calculate</button>
+    </div>
+    <div>
+      <h1>Dollars</h1>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Usdollar100front.jpg">
+      <label for="hundreds">$100</label>
+      <p id="hundreds">0</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/50_USD_Series_2004_Note_Front.jpg">
+      <label for="fiftys">$50</label>
+      <p id="fiftys">0</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/US_%2420_Series_2006_Obverse.jpg">
+      <label for="twentys">$20</label>
+      <p id="twentys">0</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/US10dollarbill-Series_2004A.jpg">
+      <label for="tens">$10</label>
+      <p id="tens">0</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/US_%245_Series_2006_obverse.jpg">
+      <label for="fives">$5</label>
+      <p id="fives">0</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/US_%242_bill_obverse_series_2003_A.jpg">
+      <label for="twos">$2</label>
+      <p id="twos">0</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/US_one_dollar_bill%2C_obverse%2C_series_2009.jpg">
+      <label for="ones">$1</label>
+      <p id="ones">0</p>
+    </div>
+    <div>
+      <h1>Coins</h1>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/2021-P_US_Quarter_Obverse.jpg">
+      <label for="quarters">$0.25</label>
+      <p id="quarters">0</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/dd/2017-D_Roosevelt_dime_obverse_transparent.png">
+      <label for="dimes">$0.10</label>
+      <p id="dimes">0</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Jefferson-Nickel-Unc-Obv.jpg">
+      <label for="nickels">$0.05</label>
+      <p id="nickels">0</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/US_One_Cent_Obv.png">
+      <label for="pennies">$0.01</label>
+      <p id="pennies">0</p>
+    </div>
+    <script src="main.js" charset="utf-8"></script>
   </body>
 </html>
